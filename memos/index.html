@@ -11,7 +11,7 @@
     <link href="assets/css/APlayer.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/highlight.github.min.css" rel="stylesheet" type="text/css">
     <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
-    <title>memos</title>
+    <title>Memos Top</title>
 
 </head>
 
@@ -62,23 +62,21 @@
             limit: '10',  // Pagination to show.
             creatorId: '1',  // The old instance is 101, and the new instance is 1. 
             domId: '#memos',  // Default #memos.
-            username: 'kabuda',  // You can customize the display ID that is not related to memos.
+            username: '卡布达',  // You can customize the display ID that is not related to memos.
             name: '卡布达',  // You can customize the displayed full name, that is not related to memos.
+            language: 'zh-CN', // 'en' 'zh-CN' etc. Used by Relative Time.
+            APIVersion: 'new', // 'new' or 'legacy', Memos API Version, <v0.22.0: 'legacy', >=v0.22.0: 'new'.
+            total: true, // Display total memos. No interface is displayed in the new version.
+            doubanAPI: '', // Fill a API to render douban subject. `null` to disable. API self-hosted: https://github.com/eallion/douban-api-rs
         }
 
     </script>
-    <script type="text/javascript" src="assets/js/lazyload.min.js?v=17.8.3"></script>
-    <script type="text/javascript" src="assets/js/marked.min.js?v=4.2.2"></script>
+    <script type="text/javascript" src="assets/js/marked.umd.min.js?v=14.0.0"></script>
     <script type="text/javascript" src="assets/js/view-image.min.js"></script>
-    <!-- <script type="text/javascript" src="assets/js/pangu.min.js?v=4.0.7"></script> -->
-    <script type="text/javascript" src="assets/js/moment.min.js?v=2.29.4"></script>
-    <script type="text/javascript" src="assets/js/moment.twitter.js"></script>
     <script type="text/javascript" src="assets/js/APlayer.min.js"></script>
     <script type="text/javascript" src="assets/js/Meting.min.js"></script>
-    <script type="text/javascript" src="assets/js/highlight.min.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script type="text/javascript" src="assets/js/custom.js"></script>
-    <script>hljs.highlightAll();</script>
 </body>
 
 </html>
